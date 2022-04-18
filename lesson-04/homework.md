@@ -1,6 +1,8 @@
 # Домашнее задание к лекции #4
 
 ## 1. Написать метакласс, который в начале названий всех атрибутов и методов (кроме магических) добавляет префикс "custom_" (+тесты).
+  Подменяться должны так же атрибуты экземпляра после создания экземпляра класса (dynamic в примере).
+
     class CustomMeta():
         pass
 
@@ -22,10 +24,14 @@
     inst.custom_line()
     CustomClass.custom_x
     str(inst) == "Custom_by_metaclass"
+    
+    inst.dynamic = "added later"
+    inst.custom_dynamic == "added later"
 
     inst.x  # ошибка
     inst.val  # ошибка
     inst.line() # ошибка
+    inst.yyy  # ошибка
     CustomClass.x  # ошибка
 
 
