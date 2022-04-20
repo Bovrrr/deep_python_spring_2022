@@ -24,7 +24,7 @@
     inst.custom_line()
     CustomClass.custom_x
     str(inst) == "Custom_by_metaclass"
-    
+
     inst.dynamic = "added later"
     inst.custom_dynamic == "added later"
 
