@@ -1,0 +1,4 @@
+cffi==1.15.0
+Cython==0.29.30
+pycparser==2.21
+utils==1.2
